@@ -11,7 +11,7 @@ def predict():
     y = df["quality"]
     x = df.drop(columns=["quality"])
 
-    model_name = "model_test"
+    model_name = "model_tarea13"
     model_version = 1
 
     model = mlflow.pyfunc.load_model(model_uri=f"models:/{model_name}/{model_version}")

@@ -1,4 +1,4 @@
-# make_predictions.pyy
+# make_predictions.py
 import mlflow
 import pandas as pd
 from sklearn.model_selection import train_test_split

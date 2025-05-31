@@ -1,4 +1,4 @@
-# make_predictions.py
+# make_predictions.pyy
 import mlflow
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -11,7 +11,7 @@ def predict():
     y = df["quality"]
     x = df.drop(columns=["quality"])
 
-    model_name = "model_tarea13"
+    model_name = "my-regression-model"
     model_version = 1
 
     model = mlflow.pyfunc.load_model(model_uri=f"models:/{model_name}/{model_version}")
